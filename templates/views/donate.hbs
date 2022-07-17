@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Donate</title>
+</head>
+  <body>
+ {{>dntnav}}
+
+      <section class="parallax-container" data-parallax-img="images/6.jpg">
+        <div class="parallax-content breadcrumbs-custom context-dark">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-9">
+                <h2 class="breadcrumbs-custom-title">Donate</h2>
+                <ul class="breadcrumbs-custom-path">
+                  <li><a href="/">Home</a></li>
+                  <li class="active">Donate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section section-lg bg-gray-1 text-center">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-9 col-lg-7">
+              <h3>Donated Product Details</h3>
+              <!-- RD Mailform-->
+              <form class="rd-form rd-mailform" enctype="multipart/form-data" method="post" action="/donate">
+                <div class="form-wrap">
+                  <input class="form-input" id="p-name" type="text" name="pname">
+                  <label class="form-label" for="p-name">Product Name</label>
+                </div>
+                <div class="form-wrap">
+                  <select class="form-input" name="pcatagory">
+                  <option class = "selected">--------Open this select menu--------</option>
+                  <option value="clothes">Clothes</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="gadgets">Electronic gadgets</option>
+                  <option value="medicine">Medicine</option>
+
+                </select>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="p-date" type="date" name="pdate">
+                  <label class="form-label" for="p-date">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Manufacturing date (if any)</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="p-cost" type="text" name="pcost">
+                  <label class="form-label" for="p-cost">Product Cost(if any)</label>
+                </div>
+                <div class="form-wrap">
+                  <label class="form-label" for="p-dis">Product Description</label>
+                  <textarea class="form-input" id="p-dis" name="pdes"></textarea>
+                </div>
+                <div class="form-wrap">
+                    <input class="form-input" id="p-images" type="file" name="pimage">
+                    <p class="form-label" for="p-images" style="left: 508px;;">
+                      Product image</p>
+
+                  </div>
+                <div class="row justify-content-center">
+                  <div class="col-12 col-sm-7 col-lg-5">
+                    <input type="submit" class="button button-block button-lg button-primary" value="donate">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Page Footer-->
+      
+      {{>footer}}
+
+  </body>
+</html>
